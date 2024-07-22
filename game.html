@@ -2,12 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Chiikawa Game</title>
     <link rel="stylesheet" href="style.css">
     <script>
         function checkAnswers() {
             let score = 0;
-            const correctAnswers = ['A', 'B', 'C', 'D', 'A'];
+            const correctAnswers = ['A', 'C', 'B', 'D', 'A'];
             for (let i = 1; i <= 5; i++) {
                 let answer = document.querySelector(`input[name="q${i}"]:checked`);
                 if (answer && answer.value === correctAnswers[i-1]) {
@@ -21,7 +21,7 @@
 </head>
 <body>
     <header>
-        <h1>My Website</h1>
+        <h1>Chiikawa Quiz</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -38,21 +38,35 @@
             </ul>
         </div>
         <div class="content">
-            <h2>Game</h2>
+            <h2>Chiikawa Quiz</h2>
             <form>
                 <label for="username">Name:</label><br>
                 <input type="text" id="username" name="username"><br>
-                <h3>Question 1</h3>
-                <input type="radio" name="q1" value="A"> A<br>
-                <input type="radio" name="q1" value="B"> B<br>
-                <input type="radio" name="q1" value="C"> C<br>
-                <input type="radio" name="q1" value="D"> D<br>
-                <h3>Question 2</h3>
-                <input type="radio" name="q2" value="A"> A<br>
-                <input type="radio" name="q2" value="B"> B<br>
-                <input type="radio" name="q2" value="C"> C<br>
-                <input type="radio" name="q2" value="D"> D<br>
-                <!-- Add more questions similarly -->
+                <h3>Question 1: What is Chiikawa's favorite food?</h3>
+                <input type="radio" name="q1" value="A"> Mochi<br>
+                <input type="radio" name="q1" value="B"> Sushi<br>
+                <input type="radio" name="q1" value="C"> Ramen<br>
+                <input type="radio" name="q1" value="D"> Pizza<br>
+                <h3>Question 2: Who is Chiikawa's best friend?</h3>
+                <input type="radio" name="q2" value="A"> Hachiware<br>
+                <input type="radio" name="q2" value="B"> Usagi<br>
+                <input type="radio" name="q2" value="C"> Kurikara<br>
+                <input type="radio" name="q2" value="D"> Kuro-chan<br>
+                <h3>Question 3: What does Chiikawa love to do in their free time?</h3>
+                <input type="radio" name="q3" value="A"> Reading<br>
+                <input type="radio" name="q3" value="B"> Exploring<br>
+                <input type="radio" name="q3" value="C"> Cooking<br>
+                <input type="radio" name="q3" value="D"> Sleeping<br>
+                <h3>Question 4: What color is Chiikawa's fur?</h3>
+                <input type="radio" name="q4" value="A"> White<br>
+                <input type="radio" name="q4" value="B"> Brown<br>
+                <input type="radio" name="q4" value="C"> Black<br>
+                <input type="radio" name="q4" value="D"> Yellow<br>
+                <h3>Question 5: What is Chiikawa's favorite season?</h3>
+                <input type="radio" name="q5" value="A"> Spring<br>
+                <input type="radio" name="q5" value="B"> Summer<br>
+                <input type="radio" name="q5" value="C"> Autumn<br>
+                <input type="radio" name="q5" value="D"> Winter<br>
                 <button type="button" onclick="checkAnswers()">Submit</button>
             </form>
         </div>
@@ -71,7 +85,7 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2024 My Website. Created on [date].</p>
+        <p>&copy; 2024 Chiikawa Quiz. Created on 7/22.</p>
     </footer>
 </body>
 </html>
