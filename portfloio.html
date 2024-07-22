@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            const correctAnswers = ['A', 'B', 'C', 'D', 'A'];
+            for (let i = 1; i <= 5; i++) {
+                let answer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (answer && answer.value === correctAnswers[i-1]) {
+                    score += 20;
+                }
+            }
+            const name = document.getElementById('username').value;
+            alert(`Hello ${name}, your score is ${score}`);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="game.html">Game</a>
+    </nav>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="#" target="_blank">Link1</a></li>
+                <li><a href="#" target="_blank">Link2</a></li>
+                <li><a href="#" target="_blank">Link3</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Game</h2>
+            <form>
+                <label for="username">Name:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <h3>Question 1</h3>
+                <input type="radio" name="q1" value="A"> A<br>
+                <input type="radio" name="q1" value="B"> B<br>
+                <input type="radio" name="q1" value="C"> C<br>
+                <input type="radio" name="q1" value="D"> D<br>
+                <h3>Question 2</h3>
+                <input type="radio" name="q2" value="A"> A<br>
+                <input type="radio" name="q2" value="B"> B<br>
+                <input type="radio" name="q2" value="C"> C<br>
+                <input type="radio" name="q2" value="D"> D<br>
+                <!-- Add more questions similarly -->
+                <button type="button" onclick="checkAnswers()">Submit</button>
+            </form>
+        </div>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Website. Created on [date].</p>
+    </footer>
+</body>
+</html>

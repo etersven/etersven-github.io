@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff; /* Pastel blue background */
+}
+
+header {
+    background-color: #3399ff; /* Darker pastel blue for header */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #4db8ff; /* Medium pastel blue for navigation */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #b3e0ff; /* Lighter pastel blue on hover */
+    color: black;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 15px;
+    background-color: #b3e0ff; /* Lighter pastel blue for sidebar */
+}
+
+.content {
+    width: 50%;
+    padding: 15px;
+    background-color: #e6f7ff; /* Same as body background */
+}
+
+.contact {
+    width: 25%;
+    padding: 15px;
+    background-color: #b3e0ff; /* Lighter pastel blue for contact section */
+}
+
+footer {
+    background-color: #3399ff; /* Darker pastel blue for footer */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
